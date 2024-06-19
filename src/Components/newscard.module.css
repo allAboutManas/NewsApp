@@ -1,0 +1,27 @@
+.crd{
+    width:30vw;
+    border:2px solid black;
+    margin: auto;
+    margin-top: 4vh;
+    background-color: black;
+    border-radius: 20px;
+
+}
+li{
+    list-style: none;
+    color:white;
+     
+}
+button{
+    width: 85px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: rgb(21, 116, 175);
+    color: white;
+}
+button:hover{
+    background-color: red;
+}
+img{
+    border-radius: 20px;
+}
