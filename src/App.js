@@ -4,7 +4,7 @@ import Nav from './Components/Nav';
 import NewsCard from './Components/NewsCard';
 import { useState } from 'react';
 function App() {
-  const [nav,SetNav]= useState("");
+  const [nav,SetNav]= useState("top");
 
   return (
     <>

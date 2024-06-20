@@ -5,10 +5,10 @@ import styles from "./nav.module.css"
 
 const Nav = ({nav,SetNav}) => {
   const navarray = [
-    "Business",
+    "Science",
     "Entertainment",
-    "General",
-    "Health",
+    "Politics",
+    "Sports",
     "Technology",
   ];
 
@@ -20,7 +20,6 @@ const Nav = ({nav,SetNav}) => {
 
 
 function handleClick(e){
-e.preventDefault();
 SetNav(e.target.innerHTML)
 
 }
