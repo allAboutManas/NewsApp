@@ -30,7 +30,7 @@ SetNav(e.target.innerHTML)
         className="navbar navbar-expand-lg bg-body-tertiary bg-primary sticky-top"
         data-bs-theme="dark"
       >
-        <div className="container-fluid  ">
+        <div className="container-fluid">
           <Link className="navbar-brand " to="/">
             Persist News
           </Link>
@@ -46,16 +46,26 @@ SetNav(e.target.innerHTML)
             <span className="navbar-toggler-icon"></span>
           </button>
           <div
-            className="collapse navbar-collapse justify-content-center"
+            className={"collapse navbar-collapse justify-content-end px-5"}
             id="navbarNav"
           >
-            <ul className="navbar-nav ">
-              {navarray.map((value, index) => (
+
+
+
+            <li className="nav-item dropdown  " >
+          <a className="nav-link dropdown-toggle " href="/" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Select Category
+          </a>
+          <ul className="dropdown-menu  ">
+          {navarray.map((value, index) => (
                 <li  className={`nav-item mx-4 ${styles.navlist}`}   key={index} onClick={handleClick}>
                   {value}
                 </li>
               ))}
-            </ul>
+          </ul>
+        </li>
+              
+
           
           </div>
         </div>

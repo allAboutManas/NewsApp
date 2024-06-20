@@ -34,6 +34,19 @@ console.log(pageData);
 
   return (
     <div>
+        <div class="d-grid gap-5 d-md-flex justify-content-md-center m-4 ">
+        <button
+          class="btn btn-primary me-md-3 "
+          onClick={Decrement}
+          type="button"
+        >
+          Prev
+        </button>
+        <button class="btn btn-primary" onClick={Increment} type="button">
+          Next
+        </button>
+      </div>
+    <div style={{display:"flex", flexWrap:"wrap"}}>
       {data.map((value, index) => (
         <div className={styles.crd} key={index}>
           <img
@@ -54,18 +67,8 @@ console.log(pageData);
           </ul>
         </div>
       ))}
-      <div class="d-grid gap-5 d-md-flex justify-content-md-center m-4 ">
-        <button
-          class="btn btn-primary me-md-3 "
-          onClick={Decrement}
-          type="button"
-        >
-          Prev
-        </button>
-        <button class="btn btn-primary" onClick={Increment} type="button">
-          Next
-        </button>
-      </div>
+      
+    </div>
     </div>
   );
 }

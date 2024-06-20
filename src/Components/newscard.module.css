@@ -1,11 +1,12 @@
 .crd{
-    width:30vw;
+    width:28vw;
+
     border:2px solid black;
     margin: auto;
     margin-top: 4vh;
     background-color: black;
     border-radius: 20px;
-
+    
 }
 li{
     list-style: none;
