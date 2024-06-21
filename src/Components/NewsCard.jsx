@@ -24,7 +24,7 @@ console.log(pageData);
   useEffect(() => {
     async function fetchData() {
       let response = await axios.get(
-        `https://newsdata.io/api/1/latest?apikey=pub_46875f7dca60e88d0484459fdfe98b0461272&country=in&category=${nav}&page=${page}`
+        `https://newsdata.io/api/1/latest?apikey=pub_46975302b8426387a960cd2130e2396eff9c4&country=in&category=${nav}&page=${page}`
       );
       setData(response.data.results);
       SetNextPageData(response.data.nextPage);
